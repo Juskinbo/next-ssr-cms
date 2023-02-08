@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artinfos",
+  "info": {
+    "singularName": "artinfo",
+    "pluralName": "artinfos",
+    "displayName": "artinfo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "author": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "default": "掘金用户"
+    },
+    "date": {
+      "type": "date"
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "content": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "label": {
+      "type": "string"
+    },
+    "watch": {
+      "type": "string"
+    },
+    "thumb": {
+      "type": "string"
+    },
+    "comment": {
+      "type": "string"
+    }
+  }
+}
