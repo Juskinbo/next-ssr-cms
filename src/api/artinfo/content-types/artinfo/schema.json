@@ -4,7 +4,8 @@
   "info": {
     "singularName": "artinfo",
     "pluralName": "artinfos",
-    "displayName": "artinfo"
+    "displayName": "artinfo",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -41,6 +42,14 @@
     },
     "comment": {
       "type": "string"
+    },
+    "cover": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }

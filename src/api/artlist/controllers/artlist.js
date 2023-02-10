@@ -1,5 +1,5 @@
 'use strict';
-
+const { removeAttrsAndId, removeTime } = require('../../../utils/index.js')
 /**
  * artlist controller
  */
@@ -13,6 +13,6 @@ module.exports = createCoreController('api::artlist.artlist', ({ strapi }) => ({
       populate: "deep",
     };
     const { data } = await super.find(ctx);
-    return data;
+    return removeAttrsAndId(removeTime(data[0]));
   },
 }));
