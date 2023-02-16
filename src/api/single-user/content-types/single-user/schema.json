@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "single_users",
+  "info": {
+    "singularName": "single-user",
+    "pluralName": "single-users",
+    "displayName": "singleUser",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "userName": {
+      "type": "string",
+      "required": true
+    },
+    "userIntro": {
+      "type": "string",
+      "required": true
+    },
+    "company": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * artlist router
+ * sysinfo router
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::artlist.artlist');
+module.exports = createCoreRouter('api::sysinfo.sysinfo');

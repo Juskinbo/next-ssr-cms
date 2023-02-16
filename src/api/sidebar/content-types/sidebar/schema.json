@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sidebars",
+  "info": {
+    "singularName": "sidebar",
+    "pluralName": "sidebars",
+    "displayName": "sidebar"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "advertises": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::advertise.advertise"
+    },
+    "user_ranks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::user-rank.user-rank"
+    },
+    "sysinfo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sysinfo.sysinfo"
+    }
+  }
+}

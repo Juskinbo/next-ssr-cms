@@ -1,9 +1,18 @@
 'use strict';
-
+const { removeTime } = require('../../../utils')
 /**
  * artinfo controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::artinfo.artinfo');
+module.exports = createCoreController('api::artinfo.artinfo', ({ strapi }) => ({
+  async find(ctx) {
+    ctx.query = {
+      ...ctx.query,
+      populate: "cover",
+    };
+    const { data } = await super.find(ctx);
+    return removeTime(data);
+  }
+}));

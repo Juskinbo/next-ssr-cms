@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "advertises",
+  "info": {
+    "singularName": "advertise",
+    "pluralName": "advertises",
+    "displayName": "advertise",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ad": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

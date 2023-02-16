@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_ranks",
+  "info": {
+    "singularName": "user-rank",
+    "pluralName": "user-ranks",
+    "displayName": "userRank",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "single_users": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::single-user.single-user"
+    }
+  }
+}

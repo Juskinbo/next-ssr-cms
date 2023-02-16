@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * artlist service
+ * layout service
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::artlist.artlist');
+module.exports = createCoreService('api::layout.layout');

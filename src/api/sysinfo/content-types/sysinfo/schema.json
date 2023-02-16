@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sysinfos",
+  "info": {
+    "singularName": "sysinfo",
+    "pluralName": "sysinfos",
+    "displayName": "sysinfo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "webcode": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "codetitle": {
+      "type": "string",
+      "required": true,
+      "default": "下载稀土掘金APP",
+      "maxLength": 10
+    },
+    "codeintro": {
+      "type": "string",
+      "default": "一个帮助开发者成长的社区",
+      "required": true,
+      "maxLength": 12
+    }
+  }
+}
