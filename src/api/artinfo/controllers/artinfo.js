@@ -10,7 +10,7 @@ module.exports = createCoreController('api::artinfo.artinfo', ({ strapi }) => ({
   async find(ctx) {
     ctx.query = {
       ...ctx.query,
-      populate: "cover",
+      populate: "deep",
     };
     const { data } = await super.find(ctx);
     return removeTime(data);

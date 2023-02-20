@@ -4,7 +4,8 @@
   "info": {
     "singularName": "sidebar",
     "pluralName": "sidebars",
-    "displayName": "sidebar"
+    "displayName": "sidebar",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -25,6 +26,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::sysinfo.sysinfo"
+    },
+    "labels": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::label.label"
     }
   }
 }
