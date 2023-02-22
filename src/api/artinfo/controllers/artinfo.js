@@ -1,5 +1,5 @@
 'use strict';
-const { removeTime } = require('../../../utils')
+const { removeTime, solveNestedLabels } = require('../../../utils')
 /**
  * artinfo controller
  */
@@ -13,6 +13,6 @@ module.exports = createCoreController('api::artinfo.artinfo', ({ strapi }) => ({
       populate: "deep",
     };
     const { data } = await super.find(ctx);
-    return removeTime(data);
+    return solveNestedLabels(removeTime(data));
   }
 }));
