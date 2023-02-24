@@ -36,7 +36,18 @@ const removeAttrsAndId = (obj) => {
   return newObj;
 };
 
+
+//优化labels的返回
+const solveNestedLabels = (obj) => {
+  for (let k in obj) {
+    let labels = obj[k].attributes.labels.data;
+    labels = labels.map(item => item = item.attributes.name);
+    obj[k].attributes.labels = labels;
+  }
+  return obj;
+}
 module.exports = {
   removeTime,
   removeAttrsAndId,
+  solveNestedLabels
 };

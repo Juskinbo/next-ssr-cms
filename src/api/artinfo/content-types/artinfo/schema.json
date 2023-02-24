@@ -26,14 +26,6 @@
       "required": true,
       "unique": true
     },
-    "content": {
-      "type": "string",
-      "required": true,
-      "unique": true
-    },
-    "label": {
-      "type": "string"
-    },
     "watch": {
       "type": "string"
     },
@@ -50,6 +42,16 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "Content": {
+      "type": "richtext",
+      "required": true
+    },
+    "labels": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::label.label",
+      "mappedBy": "artinfos"
     }
   }
 }
